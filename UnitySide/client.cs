@@ -7,9 +7,9 @@ public class UdpClnt{
 	public static void Main(){
 		byte[] data = new byte[1024];
       	string input, stringData;
-      	UdpClient server = new UdpClient("127.0.0.1", 9876);
+      	UdpClient server = new UdpClient("127.0.0.1", 9877);
 
-	    IPEndPoint sender = new IPEndPoint(IPAddress.Any, 9877);
+	    IPEndPoint sender = new IPEndPoint(IPAddress.Any, 9876);
 
 	    string welcome = "Hello, are you there?";
 	    data = Encoding.ASCII.GetBytes(welcome);
